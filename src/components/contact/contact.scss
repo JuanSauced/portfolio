@@ -1,3 +1,185 @@
+@import "../../app/global.scss";
+
 .contact {
-    background-color: lightblue;
+    background-color: #734f9a;
+    display: flex;
+
+
+
+    .left {
+        width: 50%;
+        gap: 10px;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+
+        .socialF {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: #3B5998;
+            border-radius: 30px;
+            transition: all 1s;
+
+            &:visited {
+                color: inherit;
+            }
+
+            &:hover {
+                transform: scale(1.04);
+            }
+
+
+            .iconF {
+                font-size: 100px;
+                color: #fff;
+
+                @include mobile {
+                    font-size: 50px;
+                }
+            }
+        }
+
+        .socialL {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: #0077;
+            border-radius: 30px;
+            transition: all 2s;
+
+            &:visited {
+                color: inherit;
+            }
+
+            &:hover {
+                transform: scale(1.04);
+            }
+
+
+            .iconL {
+                font-size: 100px;
+                color: #fff;
+
+                @include mobile {
+                    font-size: 50px;
+                }
+            }
+        }
+
+        .socialI {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            border-radius: 30px;
+            transition: all 2s;
+
+            &:visited {
+                color: inherit;
+            }
+
+            &:hover {
+                transform: scale(1.04);
+            }
+
+
+            .iconI {
+                font-size: 100px;
+                color: #fff;
+
+                @include mobile {
+                    font-size: 50px;
+                }
+            }
+        }
+
+        .socialW {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: #25D366;
+            border-radius: 30px;
+            transition: all 2s;
+
+            &:visited {
+                color: inherit;
+            }
+
+            &:hover {
+                transform: scale(1.04);
+            }
+
+
+            .iconW {
+                font-size: 100px;
+                color: #fff;
+
+                @include mobile {
+                    font-size: 50px;
+                }
+            }
+        }
+
+
+
+
+
+
+    }
+
+    .right {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #1d1a2f;
+        color: #fff;
+        margin: 10px;
+        border-radius: 30px;
+
+
+
+        h2 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        .course {
+
+            img {
+                width: 300px;
+                border-radius: 30px;
+                box-shadow: 8px 4px 4px #eaeaea;
+            }
+
+            h3 {
+                text-align: center;
+            }
+        }
+    }
 }

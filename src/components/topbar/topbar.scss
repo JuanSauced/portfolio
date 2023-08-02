@@ -1,10 +1,12 @@
 @import "../../app/global.scss";
 
 .topbar {
+
+    border-bottom: #eaeaea 1px solid;
     width: 100%;
     height: 70px;
-    background-color: white;
-    color: $mainColor;
+    background-color: $mainColor;
+    color: #eaeaea;
     position: fixed;
     top: 0;
     z-index: 3;
@@ -33,6 +35,10 @@
                 align-items: center;
                 margin-left: 30px;
 
+                @include mobile {
+                    display: none;
+                }
+
                 .icon {
                     font-size: 18px;
                 }
@@ -56,7 +62,7 @@
                 span {
                     width: 100%;
                     height: 3px;
-                    background-color: $mainColor;
+                    background-color: #eaeaea;
                     transform-origin: left;
                     transition: all 2s ease;
                 }
@@ -65,13 +71,14 @@
     }
 
     &.active {
-        background-color: $mainColor;
-        color: white;
+        background-color: #eaeaea;
+        color: $mainColor;
+        border: $mainColor 1px solid;
 
         .hamburger {
             span {
                 &:first-child {
-                    background-color: white;
+                    background-color: $mainColor;
                     transform: rotate(45deg);
                 }
 
@@ -80,7 +87,7 @@
                 }
 
                 &:last-child {
-                    background-color: white;
+                    background-color: $mainColor;
                     transform: rotate(-45deg);
                 }
             }

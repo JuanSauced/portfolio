@@ -13,7 +13,7 @@ const Intro = () => {
             showCursor: true,
             backDelay: 1500,
             backSpeed: 60,
-            strings: ["Developer", "Designer", "FrontEnd Lover"]
+            strings: ["Designer", "UI/UX Lover", "FrontEnd Developer"]
         })
     }, [])
 
@@ -23,7 +23,7 @@ const Intro = () => {
                 <div className="wrapper">
                     <h2>Hi there, Im</h2>
                     <h1>Luis Saucedo</h1>
-                    <h3>Freelance <span ref={textRef}></span></h3>
+                    <h3>and also <span ref={textRef}></span></h3>
                 </div>
                 <a href='#portfolio'>
                     <KeyboardArrowDown className='icon'></KeyboardArrowDown>
