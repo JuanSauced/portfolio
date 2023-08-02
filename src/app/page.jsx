@@ -4,7 +4,7 @@ import Contact from "@/components/contact/Contact";
 import Intro from "@/components/intro/Intro";
 import Portfolio from "@/components/portfolio/Portfolio";
 import Topbar from "@/components/topbar/Topbar";
-import Works from "@/components/works/Works";
+import Skills from "@/components/skills/Skills";
 import "./page.scss"
 import { useState } from "react";
 import Menu from "@/components/menu/Menu";
@@ -18,8 +18,8 @@ export default function Home() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro />
+        <Skills />
         <Portfolio />
-        <Works />
         <Contact />
       </div>
     </div>

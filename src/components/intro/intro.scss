@@ -1,3 +1,100 @@
 .intro {
-    background-color: lightpink;
+    background-color: white;
+    display: flex;
+
+    .left {
+        flex: 0.5;
+        position: relative;
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-size: 60px;
+                margin: 10px 0;
+            }
+
+            h2 {
+                font-size: 35px;
+            }
+
+            h3 {
+                font-size: 30px;
+
+                span {
+                    font-size: inherit;
+                    color: #734f9a;
+                }
+
+                .ityped-cursor {
+                    animation: blink 1s infinite;
+                }
+
+                @keyframes blink {
+                    50% {
+                        opacity: 1;
+                    }
+
+                    100% {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        a {
+            position: absolute;
+            bottom: 10px;
+            right: 40%;
+
+            .icon {
+                font-size: 100px;
+                color: #734f9a;
+                animation: arrowBlink 4s infinite;
+                border-radius: 50%;
+            }
+
+            @keyframes arrowBlink {
+                50% {
+                    color: #fff;
+                    background-color: #734f9a;
+                }
+
+                100% {
+                    color: #734f9a;
+                    background-color: #fff;
+                }
+            }
+        }
+
+    }
+
+    .right {
+        flex: 0.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .imgContainer {
+            width: 350px;
+            height: 350px;
+            overflow: hidden;
+            background-color: #AAAAAA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+
+            img {
+                width: 100%;
+                mix-blend-mode: luminosity;
+            }
+        }
+
+    }
 }
